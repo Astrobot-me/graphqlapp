@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import DataComponent from './components/DataComponent';
 
 function App() {
   return (
@@ -11,13 +12,18 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://reactjs.org"  
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
         </a>
+
       </header>
+        <div>
+          <h1>My GraphQL Data</h1>
+          <DataComponent></DataComponent>
+      </div>
     </div>
   );
 }
