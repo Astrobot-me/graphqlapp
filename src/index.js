@@ -7,7 +7,7 @@ import App from './App';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 // import App from './App';
 
-const Link = process.env.QUERY_LINK || "https://ap-south-1.cdn.hygraph.com/content/clww78g2h06c407te5js5mnyz/master" 
+const Link = "https://ap-south-1.cdn.hygraph.com/content/clww78g2h06c407te5js5mnyz/master" 
 
 const client = new ApolloClient({
   uri: Link, // Replace with your GraphQL endpoint
@@ -18,7 +18,7 @@ ReactDOM.render(
   <ApolloProvider client={client}>
     <App></App>
   </ApolloProvider>,
-  // document.getElementById('root')
+  document.getElementById('root')
 );
 
 // console.log("Hello")
